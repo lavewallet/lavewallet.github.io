@@ -64,7 +64,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 		a = (r = o) && r.__esModule ? r : {
 			default: r
 		};
-	t.TYPE_COIN = "coin", t.TYPE_ERC20 = "erc20", t.OK = a.default.infoColor.green, t.ALERT = a.default.infoColor.yellow, t.ERROR = a.default.infoColor.red, t.NORMAL = a.default.infoColor.grey, t.MAINNET = 0, t.TESTNET = 1, t.KEYS_TO_REMOVE_WHEN_EXPORTING = ["summary", "balance", "id"], t.TIMEOUT_FETCH_PRICES = 3e4, t.TIMEOUT_FETCH_PRICES_TIMEOUT = 5e3, t.TIMEOUT_UPDATE_ALL_BALANCES = 12e4, t.TIMEOUT_BETWEEN_EACH_GETBALANCE = 500, t.TIMEOUT_BETWEEN_EACH_FAIL_FETCH_FEE = 1e4, t.minpassword = 8, t.recovery_phrase_words = 12, t.LOCALSTORAGE_NETWORK = "network", t.LOCALSTORAGE_FIAT = "fiat", t.LOCALSTORAGE_ASSETS = "assets", t.LOCALSTORAGE_ASSETSEXPORTED = "assetsExported", t.LOCALSTORAGE_CUSTOMS = "customs"
+	t.TYPE_COIN = "монеты", t.TYPE_ERC20 = "erc20", t.OK = a.default.infoColor.green, t.ALERT = a.default.infoColor.yellow, t.ERROR = a.default.infoColor.red, t.NORMAL = a.default.infoColor.grey, t.MAINNET = 0, t.TESTNET = 1, t.KEYS_TO_REMOVE_WHEN_EXPORTING = ["summary", "balance", "id"], t.TIMEOUT_FETCH_PRICES = 3e4, t.TIMEOUT_FETCH_PRICES_TIMEOUT = 5e3, t.TIMEOUT_UPDATE_ALL_BALANCES = 12e4, t.TIMEOUT_BETWEEN_EACH_GETBALANCE = 500, t.TIMEOUT_BETWEEN_EACH_FAIL_FETCH_FEE = 1e4, t.minpassword = 8, t.recovery_phrase_words = 12, t.LOCALSTORAGE_NETWORK = "network", t.LOCALSTORAGE_FIAT = "fiat", t.LOCALSTORAGE_ASSETS = "assets", t.LOCALSTORAGE_ASSETSEXPORTED = "assetsExported", t.LOCALSTORAGE_CUSTOMS = "customs"
 }, , , , function(e, t, n) {
 	"use strict";
 	Object.defineProperty(t, "__esModule", {
@@ -3027,7 +3027,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			type: "password"
 		}))), s.default.createElement(T.FormField, null, s.default.createElement(T.FormFieldLeft, null, s.default.createElement(S.Label, null, "Repeat Password")), s.default.createElement(T.FormFieldRight, null, s.default.createElement(y.default, {
 			minlength: f.minpassword,
-			error: "Passwords do not match",
+			error: "Пароли не совпадают",
 			invalid: m,
 			value: i,
 			onChange: F,
@@ -3037,7 +3037,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			width: "100px",
 			disabled: !h,
 			onClick: A
-		}, "Next"))))), s.default.createElement(w.Show, {
+		}, "Далее"))))), s.default.createElement(w.Show, {
 			if: n === R.addresses
 		}, s.default.createElement("div", null, s.default.createElement(j.ItemsList, null, d.map(function(e, n) {
 			var r = t.multiaddress || !t.multiaddress && n === u;
@@ -3055,17 +3055,17 @@ webpackJsonp([0], [, , function(e, t, n) {
 			if: !l
 		}, s.default.createElement(N, {
 			onClick: B
-		}, "Load more Addresses")), s.default.createElement(L, null, c, " ", t.symbol)), s.default.createElement(x.default, {
+		}, "Загрузить больше адресов")), s.default.createElement(L, null, c, " ", t.symbol)), s.default.createElement(x.default, {
 			"margin-top": "35px"
 		}, s.default.createElement(T.FormField, null, s.default.createElement(T.FormFieldButtons, null, s.default.createElement(C.default, {
 			width: "100px",
 			loading: l,
 			loadingIco: "/static/image/loading.gif",
 			onClick: D
-		}, "Import")), s.default.createElement(T.FormFieldButtons, null, s.default.createElement(C.default, {
+		}, "Импорт")), s.default.createElement(T.FormFieldButtons, null, s.default.createElement(C.default, {
 			width: "100px",
 			onClick: z
-		}, "Back")))))))
+		}, "Назад")))))))
 	}
 	t.default = z;
 	var I = t.ResultAddress = d.default.div(o, c.default.color.background1),
@@ -3326,11 +3326,11 @@ webpackJsonp([0], [, , function(e, t, n) {
 			h = r ? null : s.default.createElement(j, null, s.default.createElement(b.default, {
 				position: "center",
 				width: 175
-			}, "No Private Key or Recovery Phrase"));
+			}, "Нет закрытого ключа или фразы восстановления"));
 		o || s.default.createElement(j, null, s.default.createElement(b.default, {
 			position: "center",
 			width: 175
-		}, "Only for assets created with Recovery Phrase"));
+		}, "Только для кошельков, созданных с помощью фразы восстановления"));
 		return s.default.createElement(w.RightContainerPadding, null, s.default.createElement(x.default, null), s.default.createElement(w.RightContent, null, s.default.createElement(v.default, {
 			"margin-bottom": c.default.paddingContent
 		}, s.default.createElement(y.Menu, null, s.default.createElement(y.MenuContentItem, {
@@ -3338,19 +3338,19 @@ webpackJsonp([0], [, , function(e, t, n) {
 			onClick: function(e) {
 				return a(f.routes.asset)
 			}
-		}, s.default.createElement(y.MenuContentItemText, null, "Summary")), s.default.createElement(y.MenuContentItem, {
+		}, s.default.createElement(y.MenuContentItemText, null, "Получить")), s.default.createElement(y.MenuContentItem, {
 			disabled: !r,
 			selected: n === f.routes.assetSend,
 			onClick: function(e) {
 				r && a(f.routes.assetSend)
 			}
-		}, s.default.createElement(y.MenuContentItemText, null, "Send", h)), s.default.createElement(y.MenuContentItem, {
+		}, s.default.createElement(y.MenuContentItemText, null, "Отправить", h)), s.default.createElement(y.MenuContentItem, {
 			disabled: !r,
 			selected: n === f.routes.assetExport,
 			onClick: function(e) {
 				r && a(f.routes.assetExport)
 			}
-		}, s.default.createElement(y.MenuContentItemText, null, "Export", h)))), s.default.createElement(f.Router, null, s.default.createElement(f.Route, {
+		}, s.default.createElement(y.MenuContentItemText, null, "Экспорт", h)))), s.default.createElement(f.Router, null, s.default.createElement(f.Route, {
 			is: f.routes.asset
 		}, s.default.createElement(i, null)), s.default.createElement(f.Route, {
 			is: f.routes.assetSend
@@ -4554,7 +4554,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			type: "password"
 		}))), a.default.createElement(w.FormField, null, a.default.createElement(w.FormFieldLeft, null, a.default.createElement(g.Label, null, "Repeat Password")), a.default.createElement(w.FormFieldRight, null, a.default.createElement(p.default, {
 			minlength: f.minpassword,
-			error: "Passwords do not match",
+			error: "Пароли не совпадают",
 			invalid: s,
 			value: i,
 			onChange: y,
@@ -4564,7 +4564,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			width: "100px",
 			disabled: !l,
 			onClick: x
-		}, "Import"))))
+		}, "Импорт"))))
 	}
 	t.default = x
 }, function(e, t, n) {
@@ -5600,7 +5600,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			type: "password"
 		}))), a.default.createElement(g.FormField, null, a.default.createElement(g.FormFieldLeft, null, a.default.createElement(v.Label, null, "Repeat Password")), a.default.createElement(g.FormFieldRight, null, a.default.createElement(p.default, {
 			minlength: f.minpassword,
-			error: "Passwords do not match",
+			error: "Пароли не совпадают",
 			invalid: l,
 			value: o,
 			onChange: u,
@@ -5610,7 +5610,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			width: "100px",
 			disabled: !i,
 			onClick: c
-		}, "Import"))))
+		}, "Импорт"))))
 	}
 	t.default = y
 }, function(e, t, n) {
@@ -5719,7 +5719,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 							o = (0, v.formatAddress)(r.address);
 						3 === r.version && (0, v.isAddress)(o) && "object" == a(r.crypto) ? (0, b.isAssetRegistered)(t.Coin.symbol, o) ? m.default.view.keystore_invalid_error = "You already have this asset" : (t.keystore = r, m.default.view.address = o, m.default.view.keystore_invalid_error = "") : m.default.view.keystore_invalid_error = "Invalid Keystore file"
 					} catch (e) {
-						console.error(e), m.default.view.keystore_invalid_error = "Invalid Keystore file"
+						console.error(e), m.default.view.keystore_invalid_error = "Неверный файл хранилища ключей"
 					}
 					n.emit()
 				})
@@ -5745,10 +5745,10 @@ webpackJsonp([0], [, , function(e, t, n) {
 							(0, h.setPrivateKey)(l, a, r), (0, h.setHref)(y.routes.asset({
 								asset_id: l
 							}))
-						} else m.default.view.keystore_password_error = "Invalid password";
+						} else m.default.view.keystore_password_error = "Неверный пароль";
 						t.emit()
 					} catch (e) {
-						return m.default.view.keystore_invalid_error = "Invalid Keystore file", t.emit(), console.error(e), !1
+						return m.default.view.keystore_invalid_error = "Неверный файл хранилища ключей", t.emit(), console.error(e), !1
 					}
 				}
 			}
@@ -6290,7 +6290,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 		}, x.default.createElement(R.default, null, x.default.createElement(R.default, null, x.default.createElement(M.default, {
 			type: "text",
 			value: r,
-			error: "Invalid address",
+			error: "Неверный адрес",
 			invalid: o,
 			onChange: fe,
 			placeholder: "Address",
@@ -6314,7 +6314,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			width: "calc(100% - 72px)"
 		}, x.default.createElement(I.default, {
 			invalid: !y,
-			error: "Not enough funds",
+			error: "Недостаточно средств",
 			value1: i,
 			value2: l,
 			color1: n,
@@ -6334,7 +6334,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 		}, x.default.createElement(X, null, f), x.default.createElement(M.default, {
 			type: "text",
 			value: p,
-			error: "Very low fee",
+			error: "Очень низкая плата",
 			color: n,
 			invalid: !1,
 			onChange: ve,
@@ -6345,13 +6345,13 @@ webpackJsonp([0], [, , function(e, t, n) {
 			if: P
 		}, x.default.createElement(R.default, {
 			"padding-top": "10px"
-		}, x.default.createElement(D.default, null, "An appropriate network fee is required to confirm this transaction. It is suggested to apply the recommended network fee."))), x.default.createElement(R.default, {
+		}, x.default.createElement(D.default, null, "Для подтверждения этой транзакции требуется соответствующий сетевой сбор. Рекомендуется применить рекомендованную плату"))), x.default.createElement(R.default, {
 			"text-align": "center",
 			padding: "10px 0"
 		}, x.default.createElement(J, {
 			href: "#",
 			onClick: be
-		}, x.default.createElement("span", null, h ? "Recommended Network Fee " : "Fee "), x.default.createElement(z.default, {
+		}, x.default.createElement("span", null, h ? "Рекомендуемая плата за сеть " : "Fee "), x.default.createElement(z.default, {
 			color: n,
 			"font-weight": "bold"
 		}, m, " "), x.default.createElement(z.default, {
@@ -6363,7 +6363,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			"padding-top": "10px"
 		}, x.default.createElement(M.default, {
 			invalid: w,
-			error: "Invalid password",
+			error: "Неверный пароль",
 			placeholder: "Password",
 			type: "password",
 			width: "100%",
@@ -6385,13 +6385,13 @@ webpackJsonp([0], [, , function(e, t, n) {
 			"padding-top": "10px"
 		}, x.default.createElement(D.default, {
 			color: k.ERROR
-		}, "This wallet does not have enough funds to afford the network fee."))), x.default.createElement(O.Show, {
+		}, "У этого кошелька недостаточно средств для оплаты услуг сети."))), x.default.createElement(O.Show, {
 			if: S
 		}, x.default.createElement(R.default, {
 			"padding-top": "10px"
 		}, x.default.createElement(D.default, {
 			color: k.ERROR
-		}, "Something wrong ocurred when creating your transaction. Please, try again later.")))), x.default.createElement(R.default, null, x.default.createElement(R.default, null, x.default.createElement(le, null, x.default.createElement(se, null, "Address"), x.default.createElement(de, {
+		}, "При создании транзакции произошло что-то не так. Пожалуйста, попробуйте позже.")))), x.default.createElement(R.default, null, x.default.createElement(R.default, null, x.default.createElement(le, null, x.default.createElement(se, null, "Address"), x.default.createElement(de, {
 			left: !0
 		}, r)), x.default.createElement(le, null, x.default.createElement(se, null, "Amount"), x.default.createElement(de, null, a, " ", s)), x.default.createElement(le, null, x.default.createElement(se, null, "Network Fee"), x.default.createElement(de, null, c, " ", d)), x.default.createElement(O.Show, {
 			if: s === d
@@ -6435,13 +6435,13 @@ webpackJsonp([0], [, , function(e, t, n) {
 			show: F,
 			text: x.default.createElement(ie, {
 				onClick: xe
-			}, "Show raw transaction")
+			}, "Показать необработанные транзакции")
 		}, x.default.createElement(oe, null, A), "" === re ? null : x.default.createElement(H.Label, {
 			size: "11px"
 		}, x.default.createElement("a", {
 			href: re,
 			target: "_blank"
-		}, "Decode raw transaction"))))), x.default.createElement(R.default, {
+		}, "Расшифровать необработанную транзакцию"))))), x.default.createElement(R.default, {
 			"padding-top": "10px"
 		}, x.default.createElement(ue, {
 			sent: 2 === t
@@ -6453,7 +6453,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			"font-size": "24px",
 			"font-weight": "900",
 			"text-align": "center"
-		}, "Transaction Sent!"), x.default.createElement(R.default, {
+		}, "Транзакция отправлена!"), x.default.createElement(R.default, {
 			"padding-top": "10px"
 		}, x.default.createElement(ce, {
 			href: V,
@@ -6640,13 +6640,13 @@ webpackJsonp([0], [, , function(e, t, n) {
 									img: (0, s.generateQRCode)(o),
 									hash: o,
 									title: "Address",
-									description: "You can share this address to receive funds."
+									description: "Вы можете поделиться этим адресом для получения средств."
 								}, {
 									img: (0, s.generateQRCode)(h, void 0, m.default.color.red3),
 									hash: h,
 									red: !0,
 									title: "Private Key",
-									description: "This CAN NOT BE SHARED. If you share this you will lose your funds."
+									description: "Приватный ключ НЕЛЬЗЯ ПЕРЕДАВАТЬ. Если вы поделитесь им, вы потеряете свои средства."
 								}, {
 									title: "Public Key",
 									hash: b
@@ -6698,31 +6698,31 @@ webpackJsonp([0], [, , function(e, t, n) {
 			s = e.onExport;
 		return a.default.createElement(b.default, null, a.default.createElement("form", null, a.default.createElement(y.FormField, null, a.default.createElement(y.FormFieldLeft, null, a.default.createElement(x.Label, null, "Format"), a.default.createElement(h.Show, {
 			if: t === k.keystore
-		}, a.default.createElement(x.SubLabel, null, "You have to remember your current password in order to import this asset in the future."))), a.default.createElement(y.FormFieldRight, null, a.default.createElement(w.default, {
+		}, a.default.createElement(x.SubLabel, null, "Вы должны запомнить свой текущий пароль, чтобы импортировать этот кошелек в будущем"))), a.default.createElement(y.FormFieldRight, null, a.default.createElement(w.default, {
 			width: "100%",
 			onChange: i
 		}, a.default.createElement("option", {
 			disabled: !n,
 			value: k.seed,
 			selected: t === k.seed
-		}, "Recovery Phrase (12 words)"), a.default.createElement("option", {
+		}, "Фраза восстановления (12 слов)"), a.default.createElement("option", {
 			value: k.privatekey,
 			selected: t === k.privatekey
-		}, "Private Key"), a.default.createElement("option", {
+		}, "Приватный ключ"), a.default.createElement("option", {
 			value: k.keystore,
 			selected: t === k.keystore
-		}, "Keystore file (UTC / JSON)")))), a.default.createElement(h.Show, {
+		}, "Файл хранилища ключей (UTC / JSON)")))), a.default.createElement(h.Show, {
 			if: n || t !== k.keystore
 		}, a.default.createElement(y.FormField, null, a.default.createElement(y.FormFieldLeft, null, a.default.createElement(x.Label, null, "Password"), a.default.createElement(x.SubLabel, null, "Password of this wallet.")), a.default.createElement(y.FormFieldRight, null, a.default.createElement(g.default, {
 			width: "100%",
 			value: r,
 			onChange: l,
 			type: "password",
-			error: "Invalid password",
+			error: "Неверный пароль",
 			invalid: o
 		})))), a.default.createElement(y.FormField, null, a.default.createElement(y.FormFieldButtons, null, a.default.createElement(v.default, {
 			onClick: s
-		}, t === k.keystore ? "Download" : "Unlock and Print")))))
+		}, t === k.keystore ? "Скачать" : "Распечатать")))))
 	}
 	t.default = C
 }, function(e, t, n) {
@@ -6852,12 +6852,12 @@ webpackJsonp([0], [, , function(e, t, n) {
 			open: t.open,
 			onKeyEnter: t.confirm,
 			onClose: t.cancel
-		}, a.default.createElement(s.PopupContent, null, a.default.createElement("strong", null, "You haven't exported your assets. If you continue you will lose any change you made. Are you sure to continue?")), a.default.createElement(s.PopupFooter, null, a.default.createElement(d.default, {
+		}, a.default.createElement(s.PopupContent, null, a.default.createElement("strong", null, "Вы не экспортировали свои активы. Если вы продолжите, вы потеряете все сделанные вами изменения. Вы уверены, что хотите продолжить?")), a.default.createElement(s.PopupFooter, null, a.default.createElement(d.default, {
 			onClick: t.cancel
-		}, "Cancel"), a.default.createElement(d.default, {
+		}, "Отмена"), a.default.createElement(d.default, {
 			onClick: t.confirm,
 			red: !0
-		}, "Continue"))))
+		}, "Продолжить"))))
 	}
 	t.default = c
 }, , , function(e, t, n) {
@@ -7523,10 +7523,10 @@ webpackJsonp([0], [, , function(e, t, n) {
 			f = e.totalAssets;
 		return m.default.createElement(R, null, m.default.createElement(w.Show, {
 			if: t === y.TESTNET
-		}, m.default.createElement(A, null, m.default.createElement("span", null, "You are on Testnet mode. "), m.default.createElement("a", {
+		}, m.default.createElement(A, null, m.default.createElement("span", null, "Вы находитесь в режиме Testnet."), m.default.createElement("a", {
 			href: "#",
 			onClick: a
-		}, "Click here to change to Mainnet."))), m.default.createElement(z, null, m.default.createElement(M, {
+		}, "Нажмите здесь, чтобы перейти на Mainnet."))), m.default.createElement(z, null, m.default.createElement(M, {
 			onClick: n
 		}, m.default.createElement("div", null, m.default.createElement(x.default, {
 			size: 28,
@@ -8088,7 +8088,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 		return s.default.createElement(N, null, s.default.createElement(v.RightContainer, null, s.default.createElement(f.Router, null, s.default.createElement(f.Route, {
 			is: f.routes.home,
 			if: 0 === t
-		}, s.default.createElement(v.RightContainerMiddle, null, s.default.createElement(g.default, null, "Add or Import assets to start working"))), s.default.createElement(f.Route, {
+		}, s.default.createElement(v.RightContainerMiddle, null, s.default.createElement(g.default, null, "Добавьте или Импортируйте кошелек, чтобы начать работу"))), s.default.createElement(f.Route, {
 			is: f.routes.home
 		}, s.default.createElement(w.default, null)), s.default.createElement(f.Route, {
 			is: f.routes.settings
@@ -8630,7 +8630,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 		}, "Testnet")))), a.default.createElement(v.FormField, null, a.default.createElement(b.default, {
 			width: "100%",
 			onClick: s
-		}, "Close / Remove", " ", r === i.MAINNET ? "mainnet" : "testnet", " ", "session")))))
+		}, "Закрыть / Удалить", " ", r === i.MAINNET ? "mainnet" : "testnet", " ", "session")))))
 	}
 	t.default = w
 }, function(e, t, n) {
@@ -8862,14 +8862,14 @@ webpackJsonp([0], [, , function(e, t, n) {
 				onClick: function(t) {
 					return a(e.url_import)
 				}
-			}, "Restore / Import"))))
+			}, "Восстановление / Импорт"))))
 		})), g.default.createElement(D, null, g.default.createElement(j.default, {
 			onClick: function(e) {
 				return a(O.routes.custom({
 					type: x.TYPE_ERC20
 				}))
 			}
-		}, "Create custom ERC20 token"))))
+		}, "Создать собственный токен ERC20"))))
 	}
 	t.default = L;
 	var D = w.default.div(o),
@@ -9100,7 +9100,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 						s = (0, j.getAssetId)(l);
 					(0, F.setSeed)(s, a, r), (0, F.setHref)(P.routes.asset({
 						asset_id: s
-					})), (0, F.addNotification)('New "' + i + '" asset has been created'), n.emit()
+					})), (0, F.addNotification)('Новый "' + i + '" актив был создан'), n.emit()
 				})) : T.default.view.password_error = !0, n.emit()
 			}
 		}, {
@@ -9175,7 +9175,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 				placeholder: "Password of this asset",
 				value: i,
 				invalid: l,
-				error: "Invalid password",
+				error: "Неверный пароль",
 				width: "100%",
 				"text-align": "center",
 				onChange: f
@@ -9191,7 +9191,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			})))
 		}))), E.default.createElement(Y, null, E.default.createElement(V, null), E.default.createElement(J, null, "OR")), E.default.createElement(q, null, E.default.createElement("div", null, E.default.createElement($, null, "02"), E.default.createElement(Z, null, "Create a new Recovery Phrase for this asset")), E.default.createElement(ee, null, E.default.createElement(I.default, {
 			onClick: d
-		}, "New")))) : E.default.createElement(U.default, null)))
+		}, "Новый")))) : E.default.createElement(U.default, null)))
 	}
 	t.default = K;
 	var Y = k.default.div(o, O.default.media.second, O.default.media.third),
@@ -9371,7 +9371,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 					a = (0, P.getAssetId)(o);
 				(0, O.setSeed)(a, n, C.default.view.password), (0, O.setHref)(g.routes.asset({
 					asset_id: a
-				})), (0, O.addNotification)('New "' + t + '" asset has been created'), e.emit()
+				})), (0, O.addNotification)('Новый "' + t + '" актив был создан'), e.emit()
 			}
 		}, {
 			key: "render",
@@ -9504,13 +9504,13 @@ webpackJsonp([0], [, , function(e, t, n) {
 			width: "100%",
 			disabled: !1,
 			onClick: m
-		}, "Back")), h.default.createElement(F.FormFieldButtonRight, {
+		}, "Назад")), h.default.createElement(F.FormFieldButtonRight, {
 			width: "69%"
 		}, h.default.createElement(z.default, {
 			width: "100%",
 			disabled: o.length > i.length,
 			onClick: g
-		}, "Create!"))))))))
+		}, "Создать!"))))))))
 	}
 	t.default = B;
 	var U = m.default.div(o, v.default.media.fourth),
@@ -9708,16 +9708,16 @@ webpackJsonp([0], [, , function(e, t, n) {
 		}, a.default.createElement("option", {
 			value: E.seed,
 			selected: t === E.seed
-		}, "Recovery Phrase (12 words)"), a.default.createElement("option", {
+		}, "Фраза восстановления (12 слов)"), a.default.createElement("option", {
 			value: E.address,
 			selected: t === E.address
-		}, "Address"), a.default.createElement("option", {
+		}, "Адрес"), a.default.createElement("option", {
 			value: E.private,
 			selected: t === E.private
-		}, "Private key unencrypted (WIF)"), a.default.createElement("option", {
+		}, "Закрытый ключ незашифрованный (WIF)"), a.default.createElement("option", {
 			value: E.bip38,
 			selected: t === E.bip38
-		}, "Private key encrypted (BIP38)")))), a.default.createElement(s.Router, null, a.default.createElement(s.Route, {
+		}, "Закрытый ключ зашифрован (BIP38)")))), a.default.createElement(s.Router, null, a.default.createElement(s.Route, {
 			if: t === E.seed
 		}, a.default.createElement(g.default, null)), a.default.createElement(s.Route, {
 			if: t === E.address
@@ -10996,33 +10996,33 @@ webpackJsonp([0], [, , function(e, t, n) {
 			color: "white"
 		}), l.default.createElement("div", {
 			class: "hideOnActive"
-		}, "Copy to Clipboard"), l.default.createElement("div", {
+		}, "Скопировать в буфер обмена"), l.default.createElement("div", {
 			class: "showOnActive"
-		}, "Copied!")), l.default.createElement(S.CircleButton, {
+		}, "Скопировано!")), l.default.createElement(S.CircleButton, {
 			color: c,
 			onClick: v
 		}, l.default.createElement(w.default, {
 			size: 25,
 			color: "white"
-		}), l.default.createElement("div", null, "Print this Address")), l.default.createElement(S.CircleButton, {
+		}), l.default.createElement("div", null, "Распечатать этот адрес")), l.default.createElement(S.CircleButton, {
 			color: c,
 			href: A
 		}, l.default.createElement(y.default, {
 			size: 25,
 			color: "white"
-		}), l.default.createElement("div", null, "Email this Address")), l.default.createElement(S.CircleButton, {
+		}), l.default.createElement("div", null, "Отправить этот адрес по электронной почте")), l.default.createElement(S.CircleButton, {
 			target: "_blank",
 			color: c,
 			href: f
 		}, l.default.createElement(x.default, {
 			size: 25,
 			color: "white"
-		}), l.default.createElement("div", null, "View on Blockchain")))))), l.default.createElement(u.Show, {
+		}), l.default.createElement("div", null, "Посмотреть на блокчейн")))))), l.default.createElement(u.Show, {
 			if: 0 === n && !o
 		}, l.default.createElement(k.default, {
 			"padding-top": "50px",
 			"padding-bottom": "50px"
-		}, l.default.createElement(O.default, null, "No transactions found for this address"))), l.default.createElement(F.Transactions, null, r.map(function(e) {
+		}, l.default.createElement(O.default, null, "По этому адресу транзакций не найдено"))), l.default.createElement(F.Transactions, null, r.map(function(e) {
 			var n = (0, p.getMonthTextShort)(e.time),
 				r = (0, p.getDay)(e.time),
 				o = Number(e.value.toString()) > 0,
@@ -11049,7 +11049,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			onClick: a,
 			loadingIco: "/static/image/loading.gif",
 			margin: "0 auto"
-		}, n === r.length ? "Rescan all transactions" : "Load more")))
+		}, n === r.length ? "Обновить все транзакции" : "Загрузка")))
 	}
 	t.default = z;
 	var I = s.default.span(o),
@@ -11418,7 +11418,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			disabled: 0 === i.length || l || r.some(function(e) {
 				return e.loading
 			})
-		}, "Add Another Address")))
+		}, "Добавить другой адрес")))
 	}
 	t.default = S;
 	var j = t.Transactions = p.default.div(o),
@@ -11560,13 +11560,13 @@ webpackJsonp([0], [, , function(e, t, n) {
 								img: (0, s.generateQRCode)(r),
 								hash: r,
 								title: "Address",
-								description: "You can share this address to receive funds."
+								description: "Вы можете поделиться этим адресом для получения средств."
 							}, {
 								img: (0, s.generateQRCode)(n, void 0, e ? "black" : h.default.color.red3),
 								hash: n,
 								red: !e,
 								title: "Private Key",
-								description: "This CAN NOT BE SHARED. If you share this you will lose your funds. " + (e ? "Encrypted (BIP38)" : "Unencrypted (WIF)")
+								description: "НЕЛЬЗЯ СООБЩАТЬ ЗАКРЫТЫЙ КЛЮЧ. Если вы поделитесь этим, вы потеряете свои средства " + (e ? "Encrypted (BIP38)" : "Unencrypted (WIF)")
 							}];
 							(0, u.printTemplate)((0, x.PrivateKey)(a)), c.default.view.loading = !1
 						}, 0)) : c.default.view.invalid_password = !0
@@ -11633,7 +11633,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			value: l,
 			onChange: c,
 			type: "password",
-			error: "Invalid password",
+			error: "Неверный пароль",
 			invalid: s
 		}))), a.default.createElement(w.FormField, null, a.default.createElement(w.FormFieldButtons, null, a.default.createElement(b.default, {
 			onClick: f,
@@ -11644,7 +11644,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 		}, a.default.createElement(m.default, {
 			"font-size": "10px",
 			color: h.default.color.red
-		}, "This might take several minutes", a.default.createElement("br", null), "and can freeze your browser"))))))
+		}, "Это может занять несколько минут", a.default.createElement("br", null), "and can freeze your browser"))))))
 	}
 	t.default = k
 }, function(e, t, n) {
@@ -11849,7 +11849,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			type: "password"
 		}))), a.default.createElement(y.FormField, null, a.default.createElement(y.FormFieldLeft, null, a.default.createElement(w.Label, null, "Repeat Password")), a.default.createElement(y.FormFieldRight, null, a.default.createElement(v.default, {
 			minlength: s.minpassword,
-			error: "Passwords do not match",
+			error: "Пароли не совпадают",
 			invalid: u,
 			value: o,
 			onChange: k,
@@ -11859,12 +11859,12 @@ webpackJsonp([0], [, , function(e, t, n) {
 			width: "200px",
 			disabled: !c,
 			onClick: C
-		}, "Change password"))))), a.default.createElement(h.default, null, a.default.createElement(p.default, null, "Delete")), a.default.createElement(h.default, {
+		}, "Изменить пароль"))))), a.default.createElement(h.default, null, a.default.createElement(p.default, null, "Delete")), a.default.createElement(h.default, {
 			"padding-top": "30px"
 		}, a.default.createElement(x.default, null, a.default.createElement("div", null, a.default.createElement(_.default, {
 			checked: i,
 			onChange: O,
-			label: "I understand that if I don't have a Recovery Phrase, my Paper Wallet or a Backup I won't be able to recover this asset."
+			label: "Я понимаю, что если у меня нет фразы восстановления, бумажного кошелька или резервной копии, я не смогу восстановить этот актив."
 		})), a.default.createElement(h.default, {
 			"padding-top": "10px"
 		}, a.default.createElement(m.default, {
@@ -12217,7 +12217,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 						}).then(function(e) {
 							b.default.view.fetching = !1, e || (b.default.view.contract_address_error = "Seems like this address is not an ERC20 contract.")
 						})
-					} else b.default.view.contract_address_error = "Invalid address";
+					} else b.default.view.contract_address_error = "Неверный адрес";
 					r.emit()
 				}
 			}
@@ -12279,7 +12279,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 					labels: t.toLowerCase() + " ethereum token erc20 ecr20 custom",
 					logo: b.default.view.logo_visible,
 					networks_availables: [b.default.network]
-				}), (0, v.addNotification)("You have created " + t + " as Custom ERC20 token", u.OK), (0, v.setHref)(c.routes.add({
+				}), (0, v.addNotification)("Вы создали " + t + " пользовательский токен ERC20", u.OK), (0, v.setHref)(c.routes.add({
 					filter: t
 				}))
 			}
