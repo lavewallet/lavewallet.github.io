@@ -7553,14 +7553,14 @@ webpackJsonp([0], [, , function(e, t, n) {
 			right: "0"
 		}, m.default.createElement(P.DropdownItem, {
 			onClick: d
-		}, "Import backup"), m.default.createElement(P.DropdownItem, {
+		}, "Импорт"), m.default.createElement(P.DropdownItem, {
 			onClick: s,
 			disabled: 0 === f
-		}, "Export backup", " ", m.default.createElement(D, {
+		}, "Экспорт", " ", m.default.createElement(D, {
 			visible: o
 		}, m.default.createElement(U, null, m.default.createElement("span", null, "!")))), m.default.createElement(P.DropdownItem, {
 			onClick: c
-		}, "Settings"))))))
+		}, "Настройки"))))))
 	}
 	t.default = j;
 	var A = b.default.div(o, g.default.infoColor.red),
@@ -8858,7 +8858,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 				color: _.default.color.front2
 			})))), g.default.createElement(J, null, g.default.createElement("img", {
 				src: e.logo
-			})), g.default.createElement(X, null, e.symbol), g.default.createElement(Q, null, e.name), g.default.createElement(q, null, g.default.createElement($, null, "Create"), g.default.createElement($, {
+			})), g.default.createElement(X, null, e.symbol), g.default.createElement(Q, null, e.name), g.default.createElement(q, null, g.default.createElement($, null, "Создать"), g.default.createElement($, {
 				onClick: function(t) {
 					return a(e.url_import)
 				}
