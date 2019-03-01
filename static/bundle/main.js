@@ -734,10 +734,10 @@ webpackJsonp([0], [, , function(e, t, n) {
 			var d = (0, b.getTotalAssets)(i);
 			if (d > 0) {
 				var u = (0, r.collect)();
-				m.default.assets = i, g(h.routes.home()), O("You have imported " + d + " Assets", a.OK), y(), x(!0), M(), B(), u.emit()
-			} else O("We couldn't find any Asset to Import on this JSON file", a.ERROR)
+				m.default.assets = i, g(h.routes.home()), O("Вы импортировали " + d + " актива", a.OK), y(), x(!0), M(), B(), u.emit()
+			} else O("Не удалось найти актив для импорта в этом файле", a.ERROR)
 		} catch (e) {
-			console.error(e), O("We couldn't parse the JSON file", a.ERROR)
+			console.error(e), O("Мы не смогли разобрать файл JSON", a.ERROR)
 		}
 	}
 
@@ -768,7 +768,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 	var T = void 0;
 
 	function j(e) {
-		e && void 0 === T ? T = O("Seems like you don't have internet connection", a.NORMAL, null) : e || void 0 === T || (P(T), T = void 0)
+		e && void 0 === T ? T = O("Похоже, у вас нет подключения к интернету", a.NORMAL, null) : e || void 0 === T || (P(T), T = void 0)
 	}
 
 	function F(e, t) {
@@ -6364,7 +6364,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 		}, x.default.createElement(M.default, {
 			invalid: w,
 			error: "Неверный пароль",
-			placeholder: "Password",
+			placeholder: "Пароль",
 			type: "password",
 			width: "100%",
 			"text-align": "center",
@@ -6379,7 +6379,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			width: "100%",
 			loading: K,
 			loadingIco: "/static/image/loading.gif"
-		}, "Next")), x.default.createElement(O.Show, {
+		}, "Далее")), x.default.createElement(O.Show, {
 			if: !_
 		}, x.default.createElement(R.default, {
 			"padding-top": "10px"
@@ -8608,9 +8608,9 @@ webpackJsonp([0], [, , function(e, t, n) {
 			s = e.onClose;
 		return a.default.createElement(p.RightContainerPadding, null, a.default.createElement(p.RightHeader, null, a.default.createElement(u.default, {
 			float: "left"
-		}, a.default.createElement(c.default, null, "Settings")), a.default.createElement(u.default, {
+		}, a.default.createElement(c.default, null, "Настройки")), a.default.createElement(u.default, {
 			clear: "both"
-		})), a.default.createElement(p.RightContent, null, a.default.createElement(u.default, null, a.default.createElement(u.default, null, a.default.createElement(f.default, null, "Currencies")), a.default.createElement(v.FormField, null, a.default.createElement(v.FormFieldLeft, null, a.default.createElement(m.Label, null, "Fiat currency")), a.default.createElement(v.FormFieldRight, null, a.default.createElement(h.default, {
+		})), a.default.createElement(p.RightContent, null, a.default.createElement(u.default, null, a.default.createElement(u.default, null, a.default.createElement(f.default, null, "Валюты")), a.default.createElement(v.FormField, null, a.default.createElement(v.FormFieldLeft, null, a.default.createElement(m.Label, null, "Фиат валюта")), a.default.createElement(v.FormFieldRight, null, a.default.createElement(h.default, {
 			width: "100%",
 			onChange: o
 		}, n.map(function(e) {
@@ -8618,7 +8618,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 				value: e.symbol,
 				selected: t === e.symbol
 			}, e.label)
-		}))))), a.default.createElement(u.default, null, a.default.createElement(u.default, null, a.default.createElement(f.default, null, "Session")), a.default.createElement(v.FormField, null, a.default.createElement(v.FormFieldLeft, null, a.default.createElement(m.Label, null, "Network"), a.default.createElement(m.SubLabel, null, "Being on testnet you will use Coinfy within the test networks.")), a.default.createElement(v.FormFieldRight, null, a.default.createElement(h.default, {
+		}))))), a.default.createElement(u.default, null, a.default.createElement(u.default, null, a.default.createElement(f.default, null, "Сессия")), a.default.createElement(v.FormField, null, a.default.createElement(v.FormFieldLeft, null, a.default.createElement(m.Label, null, "Сеть"), a.default.createElement(m.SubLabel, null, "Находясь в testnet, вы будете использовать кошелек в тестовых сетях.")), a.default.createElement(v.FormFieldRight, null, a.default.createElement(h.default, {
 			width: "100%",
 			onChange: l
 		}, a.default.createElement("option", {
@@ -9437,7 +9437,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			}, e + 1)
 		}))), h.default.createElement(W, null, "Step ", h.default.createElement("span", null, t + 1), " of 3"), h.default.createElement(H, null, h.default.createElement(I.default, {
 			active: t
-		}, h.default.createElement(K, null, h.default.createElement(G, null, "Создать пароль"), h.default.createElement(Y, null, "Вы должны запомнить свой пароль, так как его невозможно восстановить. Этот пароль защищает вашу криптовалюту, если кто-то пытается получить доступ к вашему компьютеру или мобильному устройству."), h.default.createElement(V, null, h.default.createElement(F.FormField, null, h.default.createElement(R.default, {
+		}, h.default.createElement(K, null, h.default.createElement(G, null, "Создать пароль"), h.default.createElement(Y, null, "Вы должны запомнить свой пароль, так как его невозможно восстановить. Этот пароль защищает Вашу криптовалюту, если кто-то пытается получить доступ к Вашему компьютеру или мобильному устройству."), h.default.createElement(V, null, h.default.createElement(F.FormField, null, h.default.createElement(R.default, {
 			placeholder: "Пароль",
 			minlength: w.minpassword,
 			value: n,
@@ -9459,7 +9459,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			width: "100%",
 			disabled: !s,
 			onClick: p
-		}, "Далее"))))), h.default.createElement(K, null, h.default.createElement(G, null, "Запишите или распечатайте свою фразу восстановления"), h.default.createElement(Y, null, "Запишите фразу восстановления и надежно сохраните ее.", " ", h.default.createElement("strong", null, h.default.createElement("span", null, "Не делись фразой ни с кем")), " ", "Ваша фраза восстановления позволяет Вам восстановить свой актив в случае потери или повреждения.", h.default.createElement("strong", null, " ", h.default.createElement("span", null, "Без этого вы не сможете получить доступ к своей криптовалюте, если что-то пойдет не так.")), " ", "Сделайте две копии своей фразы восстановления и храните их в разных физических местах. Обратите внимание, что ваша фраза восстановления чувствительна к регистру, и каждое слово должно быть написано в правильном порядке."), h.default.createElement(V, null, h.default.createElement(j.default, null, h.default.createElement(J, null, o.join(" ")), h.default.createElement(j.default, {
+		}, "Далее"))))), h.default.createElement(K, null, h.default.createElement(G, null, "Запишите или распечатайте свою фразу восстановления"), h.default.createElement(Y, null, "Запишите фразу восстановления и надежно сохраните ее.", " ", h.default.createElement("strong", null, h.default.createElement("span", null, "Не делитесь фразой ни с кем. ")), " ", "Ваша фраза восстановления позволяет Вам восстановить свой актив в случае потери или повреждения.", h.default.createElement("strong", null, " ", h.default.createElement("span", null, "Без этого Вы не сможете получить доступ к своей криптовалюте, если что-то пойдет не так.")), " ", "Сделайте две копии своей фразы восстановления и храните их в разных физических местах. Обратите внимание, что Ваша фраза восстановления чувствительна к регистру, и каждое слово должно быть написано в правильном порядке."), h.default.createElement(V, null, h.default.createElement(j.default, null, h.default.createElement(J, null, o.join(" ")), h.default.createElement(j.default, {
 			position: "relative",
 			top: "-20px"
 		}, h.default.createElement(M.default, {
@@ -11402,10 +11402,10 @@ webpackJsonp([0], [, , function(e, t, n) {
 			"padding-top": "30px"
 		}, f.default.createElement(C.default, {
 			type: "password",
-			placeholder: "Password of this asset",
+			placeholder: "Пароль этого кошелька",
 			value: i,
 			invalid: l,
-			error: "Invalid password",
+			error: "Неверный пароль",
 			width: "100%",
 			"text-align": "center",
 			onChange: d
@@ -12468,17 +12468,9 @@ webpackJsonp([0], [, , function(e, t, n) {
 	})));
 	t.default = function() {
 		return i.default.createElement(c, null, i.default.createElement("div", null, i.default.createElement("ul", null, i.default.createElement("li", null, i.default.createElement("a", {
-			href: "https://github.com/elevenyellow/coinfy/blob/master/FAQ.md",
+			href: "https://docs.google.com/document/d/1X3lSAGc1l9flFmkTAdVFFNnzhCZtS4TtSm7Upa5zJaY/edit?usp=sharing",
 			target: "_blank"
-		}, "FAQ")), i.default.createElement("li", null, i.default.createElement("a", {
-			href: "https://twitter.com/coinfydotcom",
-			target: "_blank"
-		}, "Twitter")), i.default.createElement("li", null, i.default.createElement("a", {
-			href: "mailto:support@coinfy.com"
-		}, "Support")), i.default.createElement("li", null, i.default.createElement("a", {
-			href: d.repository,
-			target: "_blank"
-		}, " ", "v", d.version)))))
+		}, "FAQ")))))
 	};
 	var i = u(n(0)),
 		l = u(n(1)),
