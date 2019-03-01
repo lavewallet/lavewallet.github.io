@@ -7538,7 +7538,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			size: 15,
 			color: "white"
 		})), m.default.createElement("img", {
-			src: "/static/image/logo.svg",
+			src: "/static/image/logo.png",
 			width: "80"
 		}))), m.default.createElement(L, null, m.default.createElement(B, {
 			visible: o
