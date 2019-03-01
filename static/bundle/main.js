@@ -9437,17 +9437,17 @@ webpackJsonp([0], [, , function(e, t, n) {
 			}, e + 1)
 		}))), h.default.createElement(W, null, "Step ", h.default.createElement("span", null, t + 1), " of 3"), h.default.createElement(H, null, h.default.createElement(I.default, {
 			active: t
-		}, h.default.createElement(K, null, h.default.createElement(G, null, "Create Your Password"), h.default.createElement(Y, null, "Coinfy will protect your asset with a password. You need to remember your password as there is no way it can be recovered. This password protects your cryptocurrency if someone else tries to access your computer or mobile device."), h.default.createElement(V, null, h.default.createElement(F.FormField, null, h.default.createElement(R.default, {
-			placeholder: "Password",
+		}, h.default.createElement(K, null, h.default.createElement(G, null, "Создать пароль"), h.default.createElement(Y, null, "Вы должны запомнить свой пароль, так как его невозможно восстановить. Этот пароль защищает вашу криптовалюту, если кто-то пытается получить доступ к вашему компьютеру или мобильному устройству."), h.default.createElement(V, null, h.default.createElement(F.FormField, null, h.default.createElement(R.default, {
+			placeholder: "Пароль",
 			minlength: w.minpassword,
 			value: n,
 			onChange: u,
 			width: "100%",
 			type: "password"
 		})), h.default.createElement(F.FormField, null, h.default.createElement(A.default, {
-			placeholder: "Repeat Password",
+			placeholder: "Повторите пароль",
 			minlength: w.minpassword,
-			error: d ? "Passwords do not match" : null,
+			error: d ? "Пароли не совпадают" : null,
 			invalid: d,
 			value: r,
 			onChange: c,
@@ -9459,7 +9459,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			width: "100%",
 			disabled: !s,
 			onClick: p
-		}, "Next"))))), h.default.createElement(K, null, h.default.createElement(G, null, "Write Down or Print Your Recovery Phrase"), h.default.createElement(Y, null, "Write or print your recovery phrase and store it securely offline.", " ", h.default.createElement("strong", null, h.default.createElement("span", null, "Do not share it with anyone.")), " ", "Your recovery phrase allows you to recover your asset in case of loss or damage.", h.default.createElement("strong", null, " ", h.default.createElement("span", null, "Without it, you will not be able to access your cryptocurrency if something goes wrong.")), " ", "Make two copies of your recovery phrase and store them in separate physical locations. Please note, your recovery phrase is case sensitive and each word must be written in the correct order."), h.default.createElement(V, null, h.default.createElement(j.default, null, h.default.createElement(J, null, o.join(" ")), h.default.createElement(j.default, {
+		}, "Далее"))))), h.default.createElement(K, null, h.default.createElement(G, null, "Запишите или распечатайте свою фразу восстановления"), h.default.createElement(Y, null, "Запишите фразу восстановления и надежно сохраните ее.", " ", h.default.createElement("strong", null, h.default.createElement("span", null, "Не делись фразой ни с кем")), " ", "Ваша фраза восстановления позволяет Вам восстановить свой актив в случае потери или повреждения.", h.default.createElement("strong", null, " ", h.default.createElement("span", null, "Без этого вы не сможете получить доступ к своей криптовалюте, если что-то пойдет не так.")), " ", "Make two copies of your recovery phrase and store them in separate physical locations. Please note, your recovery phrase is case sensitive and each word must be written in the correct order.Сделайте две копии своей фразы восстановления и храните их в разных физических местах. Обратите внимание, что ваша фраза восстановления чувствительна к регистру, и каждое слово должно быть написано в правильном порядке."), h.default.createElement(V, null, h.default.createElement(j.default, null, h.default.createElement(J, null, o.join(" ")), h.default.createElement(j.default, {
 			position: "relative",
 			top: "-20px"
 		}, h.default.createElement(M.default, {
@@ -9473,12 +9473,12 @@ webpackJsonp([0], [, , function(e, t, n) {
 		}, h.default.createElement(z.default, {
 			width: "100%",
 			onClick: m
-		}, "Back")), h.default.createElement(F.FormFieldButtonRight, {
+		}, "Назад")), h.default.createElement(F.FormFieldButtonRight, {
 			width: "69%"
 		}, h.default.createElement(z.default, {
 			width: "100%",
 			onClick: p
-		}, "Next"))))), h.default.createElement(K, null, h.default.createElement(G, null, "Verify Your Recovery Phrase"), h.default.createElement(V, null, h.default.createElement(j.default, null, h.default.createElement(J, {
+		}, "Далее"))))), h.default.createElement(K, null, h.default.createElement(G, null, "Проверьте вашу фразу восстановления"), h.default.createElement(V, null, h.default.createElement(j.default, null, h.default.createElement(J, {
 			error: l
 		}, i.length > 0 ? i.map(function(e) {
 			return a[e]
@@ -9491,7 +9491,7 @@ webpackJsonp([0], [, , function(e, t, n) {
 			margin: "0 auto",
 			disabled: !l,
 			red: !0
-		}, "Clear"))), h.default.createElement(X, null, a.map(function(e, t) {
+		}, "Очистить"))), h.default.createElement(X, null, a.map(function(e, t) {
 			return h.default.createElement(M.default, {
 				disabled: l || i.indexOf(t) > -1,
 				onClick: function(n) {
